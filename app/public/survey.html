@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./ff.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<h1>Tell us about yourself</h1>
+			<hr>
+			<form action="/api/post" method="POST">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" name="name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="photo">Link to Photo Image</label>
+					<input type="text" name="photo" class="form-control">
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="q1">Question 1</label>
+					<p>I love to travel to metropolitan destinations rather than tropical ones.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q1" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="q2">Question 2</label>
+					<p>I love to be around people, including people I don't know.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q2" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="q3">Question 3</label>
+					<p>I don't mind making less money, as long as I have enough to get by.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q3" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="q4">Question 4</label>
+					<p>I love moving to different cities, rather than settling down in one area.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q4" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="q5">Question 5</label>
+					<p>Spectator sports are very important to me.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q5" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="q6">Question 6</label>
+					<p>I love to talk about and listen to music.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q6" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="q7">Question 7</label>
+					<p>I care a lot about finding and eating delicious food.</p>
+					<div class="row">
+						<div class="col-xs-1">Strongly Disagree</div>
+						<div class="col-xs-10"><input type="range" name="q7" min="0" max="10"></div>
+						<div class="col-xs-1">Strongly Agree</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary btn-md">Find my match!</button>
+			</form>
+		</div>
+	</div>
+</div>
+	
+
+
+	<!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>

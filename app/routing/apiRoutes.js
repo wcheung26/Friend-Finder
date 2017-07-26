@@ -16,6 +16,7 @@ module.exports = function(app){
 		var match = {name: 'dummy', photo: 'dummy.jpg', diff: 999};
 		fs.readFile(path.join(__dirname, '../data/friends.json'), 'utf-8', function(err, body){
 			if (err) throw err;
+			bodySTR = body;
 			body = JSON.parse(body);
 			for (var i = 0; i < body.length; i++) {
 				console.log(i);
@@ -31,9 +32,11 @@ module.exports = function(app){
 				}
 			}
 			res.send(match);
+			console.log(bodySTR);
+			fs.writeFile(path.join(__dirname, '../data/friends.json'),
+					bodySTR.substring(0, bodySTR.length - 2) + ',\n' + JSON.stringify(user) +'\n]', function(err) {
+				if (err) throw err;
+			});
 		});
-		// fs.appendFile(path.join(__dirname, '../data/friends.json'), ',\n' + JSON.stringify(user), function(err) {
-		// 	if (err) throw err;
-		// });
 	});
 };

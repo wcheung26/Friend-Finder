@@ -1,5 +1,7 @@
 [
-{"name":"Jill","photo":"will.jpg","char":[3,4,5,5,7,2,3]},
-{"name":"William","photo":"will.jpg","char":[2,1,5,5,7,2,3]},
-{"name":"James","photo":"will.jpg","char":[2,1,5,5,3,3,3]}
+{"name":"Jill","photo":"http://jill-lynn.com/wp-content/uploads/2015/07/Jill-Lynn-Headshot-e1435757045485.jpg","char":[3,4,5,5,7,2,3]},
+{"name":"William","photo":"https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg","char":[2,1,5,5,7,2,3]},
+{"name":"James","photo":"http://www.stutteringhelp.org/sites/default/files/pictures/JamesRodriguez.jpg","char":[2,1,5,5,3,3,3]},
+{"name":"John","photo":"https://blog.mailchimp.com/wp-content/themes/mc-blog-theme/assets/images/portraits/author_512x512/john_f.jpg","char":[6,7,4,8,8,9,4]},
+{"name":"Phil","photo":"https://upload.wikimedia.org/wikipedia/commons/e/ef/Phillip_Phillips_Live_at_Walmart_Soundcheck%2C_December_2013.jpg","char":[6,7,4,7,7,7,4]}
 ]

@@ -2,6 +2,10 @@ var fs = require('fs');
 var path = require('path');
 
 module.exports = function(app){
+	app.get("/api/all", function(req, res) {
+		res.sendFile(path.join(__dirname, '../data/friends.json'));
+	})
+
 	app.post("/api/submit", function(req, res) {
 		var user = {};
 		user.name = req.body.name;
